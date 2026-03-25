@@ -1,0 +1,25 @@
+def display_my_profile():
+    # Storing your current focus areas and background
+    about_me = {
+        "Name": "User",
+        "Age": 20,
+        "Current Course": "NPTEL: The Joy of Computing using Python",
+        "Academic Interests": ["Proteomics", "Biochemistry", "Linear Algebra"],
+        "Programming Languages": ["Python", "C"],
+        "Creative Role": "Lead Designer for Vibrance Crew",
+        "Ongoing Projects": ["AI in Healthcare Research", "Next Banger Event Prep"]
+    }
+
+    print("--- MY PROFESSIONAL & CREATIVE PROFILE ---")
+    
+    for key, value in about_me.items():
+        if isinstance(value, list):
+            # Formats lists to look cleaner (e.g., item1, item2)
+            print(f"{key:22}: {', '.join(value)}")
+        else:
+            print(f"{key:22}: {value}")
+
+    print("------------------------------------------")
+
+if __name__ == "__main__":
+    display_my_profile()
